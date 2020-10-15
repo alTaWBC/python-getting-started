@@ -1,3 +1,7 @@
 django
 gunicorn
 django-heroku
+socket
+threading
+os
+requests
