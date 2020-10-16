@@ -10,8 +10,8 @@ from .models import Greeting
 
 def index(request):
     # return HttpResponse('Hello from Python!')
-    start()
-    # return render(request, "index.html")
+    # start()
+    return render(request, "index.html")
 
 
 def db(request):
