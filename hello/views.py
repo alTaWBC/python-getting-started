@@ -9,8 +9,9 @@ from .models import Greeting
 
 
 def index(request):
-    start()
-    # return render(request, "index.html")
+    # return HttpResponse('Hello from Python!')
+    # start()
+    return render(request, "index.html")
 
 
 def db(request):

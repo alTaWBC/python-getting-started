@@ -1,3 +1,5 @@
+from flask import Flask
+from os import environ
 import socket
 import threading
 import os
@@ -84,6 +86,10 @@ def start() -> None:
         thread.start()
         print(f"[ACTIVE CONNECTIONS] {threading.active_count() - 1}.")
 
+
+
+app = Flask(__name__)
+app.run(environ.get('PORT'))
 
 print("[Starting] server is starting!")
 start()
