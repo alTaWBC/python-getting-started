@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from server import start
+from .server import start
 
 
 from .models import Greeting
@@ -10,8 +10,8 @@ from .models import Greeting
 
 def index(request):
     # return HttpResponse('Hello from Python!')
-    # start()
-    return render(request, "index.html")
+    start()
+    # return render(request, "index.html")
 
 
 def db(request):
